@@ -1,0 +1,59 @@
+h1{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:40px;
+}
+p{
+    font-weight:300;
+    /*
+    100-thin
+    300-light
+    400-normal
+    700-bold
+    900-extra bold*/
+    font-style: italic;
+}
+p{
+    font-style:italic;
+    font-weight:bold;
+    font-size:20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+p{
+    font:italic bold 20px Arial;
+    text-align:right;
+}
+/*text decoration*/
+h1{
+    text-decoration:overline;
+    text-decoration:line-through;
+}
+a{
+    text-decoration:none;
+}
+p{
+    text-transform:uppercase;
+    text-transform: lowercase;
+    text-transform: capitalize;
+}
+p{
+    letter-spacing:5px;
+    line-height:40px;
+}
+.container{
+    width:100px;
+    height:200px;
+    padding:50px;
+    margin:100px 40px 30px 40px;
+    border:solid;
+    text-align:justify;
+    background-color: burlywood;
+
+}
+.circle{
+    width:200px;
+    height:500px;
+    background-color: brown;
+    border:2px solid black;
+    /*rounded corners*/
+    border-radius: 100%;
+}
