@@ -1,0 +1,273 @@
+
+/* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    line-height:1.6;
+    background:#f9f9f9;
+}
+
+/* Header */
+header{
+    background:url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1500&q=80')
+    no-repeat center center/cover;
+    height:100vh;
+    color:white;
+}
+
+/* Navigation */
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 60px;
+    background:rgba(0,0,0,0.7);
+}
+
+.logo{
+    font-size:32px;
+    font-weight:bold;
+    color:#ffcc00;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    font-size:18px;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:#ffcc00;
+}
+
+/* Hero Section */
+.hero{
+    text-align:center;
+    margin-top:180px;
+}
+
+.hero h1{
+    font-size:60px;
+    text-shadow:2px 2px 8px black;
+}
+
+.hero p{
+    font-size:22px;
+    margin:20px 0;
+}
+
+/* Animated Book Table Button */
+.btn{
+    display:inline-block;
+    padding:15px 35px;
+    background:#ff6600;
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+    font-size:20px;
+    font-weight:bold;
+    animation:pulse 1.5s infinite;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#e64a19;
+}
+
+@keyframes pulse{
+    0%{
+        transform:scale(1);
+    }
+    50%{
+        transform:scale(1.1);
+    }
+    100%{
+        transform:scale(1);
+    }
+}
+
+/* Restaurant Introduction */
+.intro{
+    background:#fff8f0;
+    text-align:center;
+    padding:60px 20px;
+}
+
+.intro h2{
+    color:#cc5500;
+    margin-bottom:15px;
+    font-size:35px;
+}
+
+.intro p{
+    max-width:800px;
+    margin:auto;
+    font-size:18px;
+}
+
+/* Menu Section */
+.menu{
+    padding:60px 20px;
+    text-align:center;
+}
+
+.menu h2{
+    margin-bottom:20px;
+    font-size:35px;
+    color:#333;
+}
+
+.menu table{
+    width:80%;
+    margin:auto;
+    border-collapse:collapse;
+    background:white;
+}
+
+.menu th{
+    background:#ff6600;
+    color:white;
+    padding:15px;
+}
+
+.menu td{
+    padding:15px;
+    border:1px solid #ddd;
+}
+
+/* Hover Effect on Menu Items */
+.menu tr:hover{
+    background:#ffe0cc;
+    transition:0.3s;
+    cursor:pointer;
+}
+
+/* Special Offers */
+.offers{
+    background:#fff0e6;
+    padding:60px 20px;
+    text-align:center;
+}
+
+.offers h2{
+    margin-bottom:30px;
+    font-size:35px;
+}
+
+.offer-box{
+    display:inline-block;
+    width:250px;
+    padding:20px;
+    margin:15px;
+    background:white;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+    transition:0.3s;
+}
+
+.offer-box:hover{
+    transform:translateY(-8px);
+}
+
+.offer-box h3{
+    color:#ff6600;
+    margin-bottom:10px;
+}
+
+/* Reservation Form */
+.reservation{
+    padding:60px 20px;
+    text-align:center;
+}
+
+.reservation h2{
+    margin-bottom:20px;
+    font-size:35px;
+}
+
+form{
+    max-width:500px;
+    margin:auto;
+}
+
+form input,
+form textarea{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+form button{
+    background:#ff6600;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:5px;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+form button:hover{
+    background:#cc5200;
+}
+
+/* Footer */
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* Responsive Design */
+@media(max-width:768px){
+
+    nav{
+        flex-direction:column;
+        padding:15px;
+    }
+
+    nav ul{
+        flex-direction:column;
+        text-align:center;
+        margin-top:10px;
+    }
+
+    nav ul li{
+        margin:10px 0;
+    }
+
+    .hero h1{
+        font-size:40px;
+    }
+
+    .hero p{
+        font-size:18px;
+    }
+
+    .menu table{
+        width:100%;
+    }
+
+    .offer-box{
+        width:90%;
+    }
+}
