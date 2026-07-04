@@ -1,0 +1,48 @@
+   h1{
+        color:rgba(255,0,0,5);
+        /*HSL -hue saturation lightness*/
+        color:hsl(18,32%,38%)
+
+    }
+    p{
+        /*units:px,%,*/
+        font-size: 40px;
+        /* % percentage
+        relative to the parent*/
+
+    }
+    .parent{
+        width:400px;
+    }
+    .child{
+        width:50%;
+    }
+     /*em-->relative to parent size*/
+     .parent{
+        font-size: 20px;
+     }
+     .child{
+        font-size: 2em;
+        /*2* parents(20)=40px;*/
+     }
+     /*rem-->Relative to root element*/
+     html{
+        font-size:16px;
+     }
+     h1{
+        font-size:2rem;
+        /*2*html(rem)=32px;*/
+     }
+     /*vh-->Viewport height*/
+     .hero{
+        height:100vh;
+        /*100 per screen height*/
+     }
+     /*vw-->Viewport Width*/
+     .banner{
+        width:100vw;
+    }
+
+
+
+
